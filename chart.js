@@ -1,9 +1,8 @@
-let cryptoChartInstance; // Declare a variable to hold the chart instance
+let cryptoChartInstance;
 
 export function displayChart(dates, prices, currency) {
     const ctx = document.getElementById('cryptoChart').getContext('2d');
 
-    // Destroy the existing chart instance if it exists
     if (cryptoChartInstance) {
         cryptoChartInstance.destroy();
     }
@@ -18,7 +17,7 @@ export function displayChart(dates, prices, currency) {
                 borderColor: 'rgba(75, 192, 192, 1)',
                 backgroundColor: 'rgba(75, 192, 192, 0.2)',
                 borderWidth: 1,
-                fill: false, // Ensure the area under the line is not filled
+                fill: false,
             }]
         },
         options: {
@@ -27,7 +26,7 @@ export function displayChart(dates, prices, currency) {
                     type: 'time',
                     time: {
                         unit: 'day',
-                        tooltipFormat: 'MMM dd, yyyy HH:mm', // Use `dd` instead of `DD`
+                        tooltipFormat: 'MMM dd, yyyy HH:mm',
                         displayFormats: {
                             day: 'MMM dd',
                             hour: 'HH:mm'

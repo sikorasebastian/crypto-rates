@@ -38,13 +38,13 @@ select, input[type="date"], button {
 }
 
 button {
-    width: 200px; /* Set a fixed width for the button */
+    width: 200px;
     background-color: #4CAF50;
     color: white;
     border: none;
     cursor: pointer;
-    margin: 0 auto; /* Center the button */
-    display: block; /* Ensure the button is centered as a block element */
+    margin: 0 auto;
+    display: block;
 }
 
 button:hover {
@@ -52,5 +52,5 @@ button:hover {
 }
 
 .input-right {
-    margin-right: 20px; /* Adjust the margin on the right side */
+    margin-right: 20px;
 }
