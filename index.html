@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Rates</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Crypto-Rates App</h1>
+        <div class="row">
+            <div class="column">
+                <div>
+                    <label for="cryptoSelect">Cryptocurrency: </label>
+                    <select id="cryptoSelect">
+                        <option value="bitcoin">Bitcoin (BTC)</option>
+                        <option value="ethereum">Ethereum (ETH)</option>
+                        <option value="litecoin">Litecoin (LTC)</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="currencySelect">Price currency: </label>
+                    <select id="currencySelect">
+                        <option value="usd">USD</option>
+                        <option value="eur">EUR</option>
+                        <option value="gbp">GBP</option>
+                        <option value="pln">PLN</option>
+                    </select>
+                </div>
+            </div>
+            <div class="column">
+                <div>
+                    <label for="startDate">Start Date: </label>
+                    <input type="date" id="startDate">
+                </div>
+                <div>
+                    <label for="endDate">End Date: </label>
+                    <input type="date" id="endDate">
+                </div>
+            </div>
+        </div>
+        <button id="fetchButton">Fetch Rates</button>
+        <canvas id="cryptoChart" width="400" height="200"></canvas>
+    </div>
+    <script type="module" src="./main.js"></script>
+</body>
+</html>
